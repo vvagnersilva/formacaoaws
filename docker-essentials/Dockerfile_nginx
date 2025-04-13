@@ -1,0 +1,9 @@
+#######################################################
+# O Dockerfile gera a imagem da aplicacao
+
+# Comandos importantes
+#  docker build -t live-esquenta-nginx -f Dockerfile_nginx .
+#  docker run -d -p 8082:80 live-esquenta-nginx 
+#######################################################
+FROM  nginx
+COPY hello /usr/share/nginx/html
