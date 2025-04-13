@@ -1,0 +1,12 @@
+#######################################################
+# O Dockerfile gera a imagem da aplicacao
+
+# Comandos importantes
+# docker build -t ubuntu-custom2 -f Dockerfile-custom .
+# docker run -ti ubuntu-custom2 bash
+# docker run -d ubuntu-custom2 (desatachado do terminal)
+#######################################################
+FROM ubuntu-custom
+RUN git clone https://github.com/henrylle/bia.git
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+
