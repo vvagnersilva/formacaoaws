@@ -1,3 +1,14 @@
+#######################################################
+# O Dockerfile gera a imagem da aplicacao
+
+# Comandos importantes
+
+# docker compose down
+# docker compose build server
+# docker compose up -d 
+
+#######################################################
+
 FROM public.ecr.aws/docker/library/node:22-slim
 RUN npm install -g npm@11 --loglevel=error
 
@@ -23,3 +34,4 @@ RUN mv build client/
 EXPOSE 8080
 
 CMD [ "npm", "start" ]
+#CMD ["sh", "-c", "node app > logs/app.log"]
