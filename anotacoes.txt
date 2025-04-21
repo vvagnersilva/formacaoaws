@@ -1,0 +1,23 @@
+DIA 1 - Parte 8: Entregando Desafio do dia 1
+
+./start-session-bash.sh i-06dd7314e9da44298
+
+sudo su ec2-user
+docker compose up -d (entrar na pasta bia)
+docker compose down -v
+docker compose build server(gerar nova imagem)
+docker compose exec server bash -c 'npx sequelize db:migrate'(criar a estrutura do BD)
+docker ps
+
+docker image prune -a
+ 
+RDS
+
+Master username
+postgres
+Master password
+ZMGJ3nRe1qIa333F6K0b
+
+
+
+
