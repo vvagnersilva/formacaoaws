@@ -1,0 +1,67 @@
+…ou crie um novo repositório na linha de comando
+
+echo "# vvagnersilva" >> README.md
+git init
+git add README.md
+git commit -m "primeiro commit"
+git branch -M main
+git remote add origin https://github.com/vvagnersilva/vvagnersilva.git
+git push -u origin main
+
+…ou envie um repositório existente a partir da linha de comando
+
+git remote add origin https://github.com/vvagnersilva/vvagnersilva.git
+git branch -M main
+git push -u origin main
+
+Obter o inicio do hash do primeiro commit
+git log --pretty=format:%h -n 1
+
+Verificar o histórico de commits com detalhes
+git log --oneline --graph --all
+
+Criar e mudar para uma nova branch
+git checkout -b branch
+
+Reverter um commit sem apagar o histórico
+git revert HEAD
+
+Remove o commit mais recente (HEAD) e suas alterações do histórico.
+git reset --hard HEAD~1
+
+Mesclar uma branch
+git merge nome_da_branch
+
+Excluir uma branch local
+git branch -d nome_da_branch
+
+Excluir uma branch remota
+git push origin --delete nome_da_branch
+
+Listar todas as branches
+git branch
+
+Atualizar o repositório local com alterações remotas
+git pull
+
+Configurar o nome de usuário global
+git config --global user.name "Seu Nome"
+
+Configurar o e-mail global
+git config --global user.email "seuemail@exemplo.com"
+
+Verificar configurações do Git
+git config --list
+
+Reverter um arquivo para o estado do último commit
+git restore nome_do_arquivo
+
+Cancelar um merge em andamento
+git merge --abort
+
+
+Salvar alterações no stash
+git stash
+
+Aplicar o stash mais recente:
+git stash apply
