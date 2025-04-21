@@ -1,3 +1,5 @@
 resumo_formacao_aws.docx
 anotacoes.txt
-keys/formacaoaws.pem
+
+# Ignorar a pasta keys e seus conteúdos
+keys/*
