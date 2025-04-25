@@ -1,12 +1,16 @@
 #######################################################
+# Instalaçcao do Node.js
+# nvm ls-remote (ver as versoes disponiveis)
+# nvm install v22.15.0
+# nvm use global v22.15.0
+#######################################################
 # O Dockerfile gera a imagem da aplicacao
-
+#
 # Comandos importantes
-
+#
 # docker compose down
-# docker compose build server
-# docker compose up -d 
-
+# docker compose build
+# docker compose up -d
 #######################################################
 
 FROM public.ecr.aws/docker/library/node:22-slim
