@@ -1,12 +1,12 @@
 function build() {
     echo "Iniciando build ..."
 
-    API_URL=$1  
     echo "API_URL: " $API_URL
 
     echo "Diretorio atual : $(pwd)"
 
     cd bia
+
     npm install 
 
     echo "Iniciando build ..."
@@ -16,5 +16,3 @@ function build() {
     echo "Build finalizado"
     cd ..
 }
-
-build $1
