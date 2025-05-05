@@ -1,36 +1,27 @@
-###UNZIP ###
-NOME=$1
+NOME_INSTANCIA=$1
 NOME_RDS=$2
 
-INSTANCE_ID=$(aws ec2 describe-instances \
-            --filter "Name=tag:Name,Values=$NOME" \
-            --query "Reservations[].Instances[?State.Name == 'running'].InstanceId[]" \
-            --output text --profile formacao-aws)
+INSTANCE_ID=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=$NOME_INSTANCIA" --query "Reservations[*].Instances[?State.Name=='running'].InstanceId" \
+  --output text --profile formacao-aws)
 
-if [ -z "$INSTANCE_ID" ]; then
-    echo "Instancia não encontrada"
-    exit 1
+if [ -z $INSTANCE_ID ]; then
+    echo "A instancia $NOME_INSTANCIA não existe ou está parada"
+else
+    echo "A instancia $NOME_INSTANCIA tem o ID $INSTANCE_ID"
 fi
 
-echo "Instancia: " $INSTANCE_ID
-
-DNS_PRIVADO_DO_RDS=$(aws rds describe-db-instances \
+DB_INSTANCE=$(aws rds describe-db-instances \
             --db-instance-identifier $NOME_RDS \
             --query "DBInstances[].Endpoint.Address" \
             --output text --profile formacao-aws)
 
-if [ -z "$DNS_PRIVADO_DO_RDS" ]; then
-    echo "RDS não encontrado"
-    exit 1
+if [ -z $DB_INSTANCE ]; then
+    echo "O banco de dados $NOME_RDS não existe"
+else
+    echo "O banco de dados $NOME_RDS tem o endpoint $DB_INSTANCE"
 fi
 
-echo "DNS Privado do RDS: " $DNS_PRIVADO_DO_RDS
-
-#create the port forwarding tunnel
-aws ssm start-session \
-    --target $INSTANCE_ID \
-    --document-name AWS-StartPortForwardingSessionToRemoteHost \
-    --parameters '{"host":["'$DNS_PRIVADO_DO_RDS'"],"portNumber":["5432"],"localPortNumber":["5433"]}' \
-    --output text --profile formacao-aws
-
-
+aws ssm start-session --target $INSTANCE_ID \
+            --document-name AWS-StartPortForwardingSessionToRemoteHost \
+            --parameters '{"host":["'"$DB_INSTANCE"'"],"portNumber":["5432"],"localPortNumber":["5435"]}' \
+            --output text --profile formacao-aws
