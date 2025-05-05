@@ -31,6 +31,6 @@ aws ssm start-session \
     --target $INSTANCE_ID \
     --document-name AWS-StartPortForwardingSessionToRemoteHost \
     --parameters '{"host":["'$DNS_PRIVADO_DO_RDS'"],"portNumber":["5432"],"localPortNumber":["5433"]}' \
-    --output text --profile formacao-aws)
+    --output text --profile formacao-aws
 
 
