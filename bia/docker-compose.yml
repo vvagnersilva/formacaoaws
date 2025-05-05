@@ -8,8 +8,8 @@ services:
       - database
     environment:
       DB_USER: postgres
-      DB_PWD: postgres
-      DB_HOST: database
+      DB_PWD: yOBUQlZLf7Wjnje3zuBm
+      DB_HOST: bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
       ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
       # DB_SECRET_NAME: 
@@ -29,16 +29,10 @@ services:
     container_name: database
     environment:
      ################ CONEXAO LOCAL ################
-     # - "POSTGRES_USER=postgres"
-     # - "POSTGRES_PASSWORD=postgres"
-     # - "POSTGRES_DB=bia"
-     ################ CONEXAO LOCAL ################
-
-     ################ CONEXAO RDS ################
-      - "POSTGRES_USER=bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com"
-      - "POSTGRES_PASSWORD=yOBUQlZLf7Wjnje3zuBm"
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=postgres"
       - "POSTGRES_DB=bia"
-     ################ CONEXAO RDS ################
+     ################ CONEXAO LOCAL ################
     ports:
       - 5433:5432
     volumes:
