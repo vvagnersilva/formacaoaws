@@ -7,10 +7,20 @@ services:
     links:
       - database
     environment:
+      ############ Banco de dados local ##############
+      #DB_USER: postgres
+      #DB_PWD: postgres
+      #DB_HOST: database
+      #DB_PORT: 5432
+      ############ Banco de dados local ##############
+
+      ############ Banco de dados no RDS ##############
       DB_USER: postgres
       DB_PWD: yOBUQlZLf7Wjnje3zuBm
       DB_HOST: bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
+      ############ Banco de dados no RDS ##############
+
       ## NAO PRECISA NO BOOTCAMP DAQUI PRA BAIXO ##
       # DB_SECRET_NAME: 
       # DB_REGION: 
