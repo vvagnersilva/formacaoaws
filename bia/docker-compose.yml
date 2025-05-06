@@ -16,8 +16,8 @@ services:
 
       ############ Banco de dados no RDS ##############
       DB_USER: postgres
-      DB_PWD: bZJ7vpGXldS9pnsVttqM
-      DB_HOST: db-bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com
+      DB_PWD: AF6Lm48W8pY3BLxqNs2E
+      DB_HOST: bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
       ############ Banco de dados no RDS ##############
 
