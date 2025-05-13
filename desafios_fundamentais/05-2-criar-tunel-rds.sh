@@ -23,5 +23,5 @@ fi
 
 aws ssm start-session --target $INSTANCE_ID \
             --document-name AWS-StartPortForwardingSessionToRemoteHost \
-            --parameters '{"host":["'"$DB_INSTANCE"'"],"portNumber":["5432"],"localPortNumber":["5435"]}' \
+            --parameters '{"host":["'"$DB_INSTANCE"'"],"portNumber":["5432"],"localPortNumber":["5433"]}' \
             --output text --profile formacao-aws
