@@ -3,7 +3,7 @@
 NOME_INSTANCIA=$1
 INSTANCE_ID=$(aws ec2 describe-instances \
    --filter "Name=tag:Name,Values=$NOME_INSTANCIA" \
-   --query "Reservations[*].Instances[?State.Name=='stopped'].InstanceId" \
+   --query "Reservations[].Instances[].InstanceId[]" \
    --output text --profile formacao-aws)
 
 if [ -z $INSTANCE_ID ]; then
