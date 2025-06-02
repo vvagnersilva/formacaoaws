@@ -1,0 +1,10 @@
+services:
+  server:
+    image: 158128612190.dkr.ecr.us-east-1.amazonaws.com/bia-beanstalk:${TAG}
+    ports:
+      - 80:8080
+    environment:
+      DB_USER: postgres
+      DB_PWD: xprNEA7TKyr3Dh6cXFHn
+      DB_PORT: 5432
+      DB_HOST: bia.c89iugcg2z3m.us-east-1.rds.amazonaws.com
