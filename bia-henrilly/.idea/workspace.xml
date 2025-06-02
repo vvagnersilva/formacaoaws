@@ -5,84 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824fa0c5-09ca-4640-9b8c-e68fa7e40b65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../original/bia/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/.sequelizerc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/Dockerfile_checkdisponibilidade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/controllers/tarefas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/controllers/versao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/data/tarefas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/models/tarefas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/routes/ping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/routes/tarefas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/api/routes/versao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/bia-versao-c465914.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/bia.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/build-beanstalk.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/buildspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/AddTask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/DadosHenrylle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/Task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/components/Tasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/client/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/config/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/config/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/config/express.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/database/migrations/20210924000838-criar-tarefas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/docker-compose-eb.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/gerar-compose.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/lib/boot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/rodar_app_local_unix.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/rodar_app_local_windows.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/criar_role_ssm.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ec2_principal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/unix/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/unix/check-disponibilidade.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/unix/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/unix/testar-latencia.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/windows/build.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/windows/build_rodando_powershell.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/windows/check-disponibilidade.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ecs/windows/deploy.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/lancar_ec2_zona_a.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/ligar_bia_local.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/parar_bia_local.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/setup_bia_dev_ubuntu_ui.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/setup_cloudshell_ssm.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/setup_ui_ubuntu.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/setup_vscode+chrome.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/start-session-bash.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/teste" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/user_data_ec2_zona_a.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts/validar_recursos_zona_a.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/scripts_evento/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../original/bia/tests/unit/controllers/versao.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../original/bia/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../original/bia/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../original/bia/bia-versao-c465914.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../original/bia/gerar-compose.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../original/bia/gerar-compose.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +38,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/wagner/formacaoaws/bia-henrilly"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/wagner/formacaoaws/bia-henrilly&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="824fa0c5-09ca-4640-9b8c-e68fa7e40b65" name="Changes" comment="" />
