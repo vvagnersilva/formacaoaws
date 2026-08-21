@@ -8,6 +8,14 @@
 
 ## Como rodar a aplicação
 
+### Build da imagem Docker
+
+```bash
+docker compose build server
+```
+
+Isso vai fazer build apenas da aplicação Node.js. Use esse comando quando tiver alterado o código e quiser recompilar a imagem.
+
 ### Subindo a aplicação com Docker Compose
 
 ```bash
