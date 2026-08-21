@@ -2,33 +2,69 @@
 
 # dependencies
 /node_modules
-
-
-
-#React node_modules
 /client/node_modules
 
-#React production project
+# build outputs
 /client/build
-/.pnp
-.pnp.js
-
-# testing
+/build
+/dist
+/.next
+/.turbo
 /coverage
 
-# production
-/build
+# package manager/cache
+/.pnp
+.pnp.js
+.npm/
+.pnpm-store/
 
-# misc
-.DS_Store
+# environment files
+.env
+.env.*
+!.env.example
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
-#playwright
+# system / editor / local files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# local runtime / temp files
+.tmp/
+.temp/
+.cache/
+*.pid
+*.seed
+
+# Docker local state
+.docker/
+
+docker-compose.override.yml
+
+# Playwright / browser artifacts
 .playwright-mcp/*
+playwright-report/
+playwright/.cache/
+
+# local database / data
+*.sqlite
+*.sqlite3
+db-data/
+postgres-data/
+
+# optional local scripts / generated files
+*.local
+*.bak
+*.orig
