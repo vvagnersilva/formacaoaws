@@ -47,6 +47,60 @@ docker compose logs -f
 ### Rodando migrations no banco de dados
 
 ```bash
-docker compose exec bia bash -c 'npx sequelize db:migrate'
+docker compose exec server bash -c 'npx sequelize db:migrate'
 ```
+
+---
+
+## Notas Técnicas
+
+### Mapeamento de Portas
+
+O arquivo `compose.yml` mapeia as portas da seguinte forma:
+
+```yaml
+ports:
+  - 3001:8080  # Host:Container
+```
+
+**Como acessar:**
+- De fora do container: `http://localhost:3001`
+- De dentro do container: `http://localhost:8080`
+
+### Exemplo de Uso
+
+Verificar status dos containers:
+
+```bash
+docker ps
+```
+
+Resultado esperado:
+
+```
+CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                                         NAMES
+080bfba1cf69   68644b5c42bd               "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:3001->8080/tcp, [::]:3001->8080/tcp   bia
+5bc5781b7c7d   postgres:17.1              "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:5434->5432/tcp, [::]:5434->5432/tcp   database
+a38455a28e0b   valkey/valkey:8.1-alpine   "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis
+```
+
+Entrar no container:
+
+```bash
+docker exec -ti <CONTAINER_ID> bash
+```
+
+Testar health check:
+
+```bash
+curl http://localhost:8080/api/versao
+```
+
+Resposta esperada:
+
+```
+Bia 4.3.0
+```
+
+
 
