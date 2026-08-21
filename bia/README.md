@@ -69,6 +69,20 @@ ports:
 
 ### Exemplo de Uso
 
+### Entendimento sobre o acesso externo e dentro do container -->  ports: - 3001:8080 (no compose.yml)
+
+wasilva@Dell:~/formacaoaws/bia$ docker ps
+
+CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                                         NAMES
+080bfba1cf69   68644b5c42bd               "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:3001->8080/tcp, [::]:3001->8080/tcp   bia
+5bc5781b7c7d   postgres:17.1              "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:5434->5432/tcp, [::]:5434->5432/tcp   database
+a38455a28e0b   valkey/valkey:8.1-alpine   "docker-entrypoint.s…"   25 minutes ago   Up 3 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis
+
+docker exec -ti 080bfba1cf69 bash
+
+root@080bfba1cf69:/usr/src/app# curl http://localhost:8080/api/versao
+Bia 4.3.0
+
 Verificar status dos containers:
 
 ```bash
