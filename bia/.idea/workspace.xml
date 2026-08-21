@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5a62806-e9bc-4ac0-b6e0-3b2921c05bc1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/tarefas.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/tarefas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/versao.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/versao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/tarefas.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/tarefas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/buildspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AddTask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DadosHenrylle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Task.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Tasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/criar_role_ssm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/criar_role_ssm.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ecs/unix/testar-latencia.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ecs/unix/testar-latencia.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/lancar_ec2_zona_a.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/lancar_ec2_zona_a.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ligar_bia_local.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ligar_bia_local.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/parar_bia_local.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/parar_bia_local.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup_bia_dev_ubuntu_ui.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_bia_dev_ubuntu_ui.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup_cloudshell_ssm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_cloudshell_ssm.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup_ui_ubuntu.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_ui_ubuntu.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup_vscode+chrome.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_vscode+chrome.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/teste" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/user_data_ec2_zona_a.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/user_data_ec2_zona_a.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/controllers/versao.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/controllers/versao.test.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/wasilva/formacaoaws/bia" value="3IEbaBRwBsuFeEIKrDYdb2xQZmv" />
+    </persistenceIdMap>
+  </component>
+  <component name="DBNavigator.Project.Workspace.Settings">
+    <assistant-settings>
+      <credential-settings>
+        <credentials />
+      </credential-settings>
+      <profile-settings>
+        <profiles />
+      </profile-settings>
+      <mcp-server-settings>
+        <workspace-integration value="false" />
+        <mcp-servers />
+        <mcp-tool-approvals />
+      </mcp-server-settings>
+    </assistant-settings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vvagnersilva&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vvagnersilva/formacaoaws.git&quot;,
+    &quot;accountId&quot;: &quot;30e3ae8e-e2c6-4f0f-8e57-c89f03d53f32&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3IEbPT2DIuSfN1mJg43JwKb09iR" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wasilva/formacaoaws/bia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5a62806-e9bc-4ac0-b6e0-3b2921c05bc1" name="Changes" comment="" />
+      <created>1787332650750</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787332650750</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
