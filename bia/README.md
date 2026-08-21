@@ -8,7 +8,7 @@
 
 ## Arquitetura AWS e Serviços Utilizados
 
-![Diagrama de Arquitetura AWS](./diagrama-aws.png)
+![Diagrama de Arquitetura AWS](./diagrama-arquitetura-aws.png)
 
 Este diagrama mostra os principais blocos de uma arquitetura AWS, com foco em computação, bancos de dados, mensageria, orquestração, IA/ML, rede, observabilidade e segurança.
 
