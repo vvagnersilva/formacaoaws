@@ -18,17 +18,13 @@ Este diagrama mostra os principais blocos de uma arquitetura AWS, com foco em co
 
 ### Build da imagem Docker
 
-```bash
 docker compose build server
-```
 
 Isso vai fazer build apenas da aplicação Node.js. Use esse comando quando tiver alterado o código e quiser recompilar a imagem.
 
 ### Subindo a aplicação com Docker Compose
 
-```bash
 docker compose up
-```
 
 Isso vai fazer build da imagem e iniciar os 3 serviços:
 - **bia** (aplicação Node.js) → http://localhost:3001
@@ -84,6 +80,16 @@ O mapeamento de portas `3001:8080` significa:
   - Exemplo: `curl http://localhost:3001/api/versao`
 - **Acesso INTERNO** (dentro do container): use a porta **8080**
   - Exemplo: `curl http://localhost:8080/api/versao`
+
+### Entendimento sobre a conexão do PostgreSQL -->  ports: - 5434:5432 (no compose.yml)
+
+O mapeamento de portas `5434:5432` significa:
+- **Acesso EXTERNO** (do seu computador para o banco): use a porta **5434**
+  - Exemplo de conexão local: `postgresql://postgres:postgres@localhost:5434/bia`
+- **Acesso INTERNO** (dentro do container Docker, de outra aplicação/container): use a porta **5432**
+  - Exemplo de conexão interna: `postgresql://postgres:postgres@database:5432/bia`
+
+Em outras palavras, a aplicação usa `database:5432` internamente, enquanto você acessa o banco pelo host com `localhost:5434`.
 
 wasilva@Dell:~/formacaoaws/bia$ docker ps
 
