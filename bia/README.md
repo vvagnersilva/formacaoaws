@@ -6,6 +6,12 @@
 
 ---
 
+## Arquitetura AWS e Serviços Utilizados
+
+![Diagrama de Arquitetura AWS](./diagrama.png)
+
+---
+
 ## Como rodar a aplicação
 
 ### Build da imagem Docker
@@ -107,10 +113,10 @@ a38455a28e0b   valkey/valkey:8.1-alpine   "docker-entrypoint.s…"   25 minutes 
 Entrar no container:
 
 ```bash
-docker exec -ti <CONTAINER_ID> bash
+docker exec -ti 080bfba1cf69 bash
 ```
 
-Testar health check:
+acesso da aplicacao de dentro do container:
 
 ```bash
 curl http://localhost:8080/api/versao
