@@ -71,6 +71,12 @@ ports:
 
 ### Entendimento sobre o acesso externo e dentro do container -->  ports: - 3001:8080 (no compose.yml)
 
+O mapeamento de portas `3001:8080` significa:
+- **Acesso EXTERNO** (de fora do container, do seu computador): use a porta **3001**
+  - Exemplo: `curl http://localhost:3001/api/versao`
+- **Acesso INTERNO** (dentro do container): use a porta **8080**
+  - Exemplo: `curl http://localhost:8080/api/versao`
+
 wasilva@Dell:~/formacaoaws/bia$ docker ps
 
 CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS         PORTS                                         NAMES
