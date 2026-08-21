@@ -7,49 +7,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a62806-e9bc-4ac0-b6e0-3b2921c05bc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/tarefas.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/tarefas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/versao.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/versao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/tarefas.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/tarefas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/buildspec.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AddTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DadosHenrylle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Tasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/express.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/criar_role_ssm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/criar_role_ssm.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ecs/unix/testar-latencia.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ecs/unix/testar-latencia.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/lancar_ec2_zona_a.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/lancar_ec2_zona_a.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ligar_bia_local.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ligar_bia_local.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/parar_bia_local.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/parar_bia_local.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/setup_bia_dev_ubuntu_ui.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_bia_dev_ubuntu_ui.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/setup_cloudshell_ssm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_cloudshell_ssm.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/setup_ui_ubuntu.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_ui_ubuntu.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/setup_vscode+chrome.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/setup_vscode+chrome.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/teste" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/user_data_ec2_zona_a.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/user_data_ec2_zona_a.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/controllers/versao.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/controllers/versao.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="b5a62806-e9bc-4ac0-b6e0-3b2921c05bc1" name="Changes" comment="Sincronizacao do codigo fonte." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +51,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000220700280263" />
+      <entry key="MS500" value="1.3419082667654367" />
+      <entry key="S2" value="3.7111425730805707" />
+      <entry key="S5" value="6.2172465190443" />
+      <entry key="S10" value="7.767880713890719" />
+      <entry key="S30" value="9.16090431571701" />
+      <entry key="S60" value="9.56709678835623" />
+      <entry key="M2" value="9.786748159267905" />
+      <entry key="M5" value="10.26517975659537" />
+      <entry key="M10" value="11.285854399728898" />
+      <entry key="M15" value="12.038721883240179" />
+      <entry key="M30" value="13.201057912232665" />
+      <entry key="H1" value="14.002505049859634" />
+      <entry key="H2" value="14.473971239597512" />
+      <entry key="H4" value="14.729783979667353" />
+      <entry key="D1" value="14.953929662832657" />
+      <entry key="W1" value="14.99339273567225" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8952353184443103" />
+      <entry key="MS500" value="1.3167258056865565" />
+      <entry key="S2" value="3.6975889987864368" />
+      <entry key="S5" value="6.207172117933563" />
+      <entry key="S10" value="7.761156507263756" />
+      <entry key="S30" value="9.158122893453903" />
+      <entry key="S60" value="9.565624855701765" />
+      <entry key="M2" value="9.785990123117365" />
+      <entry key="M5" value="10.264859197349937" />
+      <entry key="M10" value="11.285676305270567" />
+      <entry key="M15" value="12.038594426558076" />
+      <entry key="M30" value="13.200987454145427" />
+      <entry key="H1" value="14.002467501834001" />
+      <entry key="H2" value="14.47395178361755" />
+      <entry key="H4" value="14.729774066677633" />
+      <entry key="D1" value="14.953927983652447" />
+      <entry key="W1" value="14.993392495109905" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
@@ -160,6 +177,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sincronizacao do codigo fonte." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sincronizacao do codigo fonte." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
