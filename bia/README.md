@@ -4,16 +4,6 @@
 
 [>> Página de Inscrição do evento](https://org.imersaoaws.com.br/github/readme)
 
----
-
-## Arquitetura AWS e Serviços Utilizados
-
-![Diagrama de Arquitetura AWS](./diagrama-arquitetura-aws.png)
-
-Este diagrama mostra os principais blocos de uma arquitetura AWS, com foco em computação, bancos de dados, mensageria, orquestração, IA/ML, rede, observabilidade e segurança.
-
----
-
 ## Como rodar a aplicação
 
 ### Build da imagem Docker
@@ -53,14 +43,11 @@ docker compose logs -f
 ```bash
 docker compose exec server bash -c 'npx sequelize db:migrate'
 ```
-
----
-
-## Notas Técnicas
-
 ### Mapeamento de Portas
 
 O arquivo `compose.yml` mapeia as portas da seguinte forma:
+
+![Diagrama de acesso externo e interno do container](./diagrama_conexao.png)
 
 ```yaml
 ports:

@@ -37,7 +37,7 @@ services:
       - "POSTGRES_PASSWORD=postgres"
       - "POSTGRES_DB=bia"
     ports:
-      - 5433:5432
+      - 5434:5432
     volumes:
       - db:/var/lib/postgresql/data
   redis:
