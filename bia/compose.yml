@@ -2,11 +2,14 @@ services:
   server:
     build: .
     container_name: bia
+    command: sh -c "npx sequelize db:migrate && npm start"
     ports:
       - 3001:8080
     depends_on:
-      - database
-      - redis
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_started
     environment:
       DB_USER: postgres
       DB_PWD: postgres
@@ -38,6 +41,11 @@ services:
       - "POSTGRES_DB=bia"
     ports:
       - 5434:5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bia"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
     volumes:
       - db:/var/lib/postgresql/data
   redis:

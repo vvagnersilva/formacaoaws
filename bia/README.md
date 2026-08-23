@@ -40,6 +40,10 @@ docker compose logs -f
 
 ### Rodando migrations no banco de dados
 
+Ao subir com `docker compose up`, a aplicação já executa `npx sequelize db:migrate` automaticamente antes de iniciar o servidor.
+
+Se precisar rodar manualmente:
+
 ```bash
 docker compose exec server bash -c 'npx sequelize db:migrate'
 ```
