@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Este script recebe o nome de uma instância EC2 e o nome de um banco de dados RDS como argumentos e inicia um túnel para o banco de dados através da instância EC2 usando o AWS Systems Manager (SSM).
-### ./05-2-criar-tunel-rds.sh bia-dev bia
+### ./criar-tunel-rds.sh bia-dev
+### ./criar-tunel-rds.sh bia-dev bia
 
 NOME_INSTANCIA=$1
-NOME_RDS=$2
+NOME_RDS=${2:-bia}
 
 INSTANCE_ID=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=$NOME_INSTANCIA" --query "Reservations[*].Instances[?State.Name=='running'].InstanceId" \
   --output text --profile formacaoaws)

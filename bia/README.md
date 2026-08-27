@@ -30,6 +30,7 @@ docker compose up -d
 
 ```bash
 docker compose down
+docker rm -f $(docker ps -aq) -- # remove todos os containers
 ```
 
 ### Ver logs

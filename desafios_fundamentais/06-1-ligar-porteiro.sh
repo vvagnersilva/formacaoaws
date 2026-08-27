@@ -4,7 +4,7 @@ NOME_INSTANCIA=$1
 INSTANCE_ID=$(aws ec2 describe-instances \
    --filter "Name=tag:Name,Values=$NOME_INSTANCIA" \
    --query "Reservations[].Instances[].InstanceId[]" \
-   --output text --profile formacao-aws)
+   --output text --profile formacaoaws)
 
 if [ -z $INSTANCE_ID ]; then
     echo "A instancia $NOME_INSTANCIA não existe ou está parada"
@@ -14,12 +14,12 @@ fi
 
 STATUS_PORTEIRO=$(aws ec2 describe-instances --instance-ids $INSTANCE_ID \
    --query "Reservations[*].Instances[0].State.Name" \
-   --output text --profile formacao-aws)
+   --output text --profile formacaoaws)
 
 if [ "$STATUS_PORTEIRO" != "running" ]; then
     echo "Iniciando EC2 $INSTANCE_ID"
     aws ec2 start-instances --instance-ids $INSTANCE_ID \
-         --profile formacao-aws &> /dev/null &
+         --profile formacaoaws &> /dev/null &
     echo "Aguardando 30s para o porteiro ficar pronto ..."
     sleep 30
 else
@@ -31,4 +31,4 @@ aws ssm start-session \
     --target $INSTANCE_ID \
     --document-name AWS-StartPortForwardingSession \
     --parameters '{"portNumber":["3001"],"localPortNumber":["3002"]}' \
-    --profile formacao-aws
+    --profile formacaoaws
