@@ -2,25 +2,26 @@ version: 0.2
 
 env:
   variables:
-    ECR_REGISTRY: 455958489218.dkr.ecr.us-east-1.amazonaws.com
-    ECR_REPO: bia
+    REPOSITORY_URI: 455958489218.dkr.ecr.us-east-1.amazonaws.com/bia
 
 phases:
   pre_build:
     commands:
       - echo Fazendo login no ECR...
-      - aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_REGISTRY
-      - export REPOSITORY_URI=$ECR_REGISTRY/$ECR_REPO
-      - export COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-      - export IMAGE_TAG=${COMMIT_HASH:=latest}
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 455958489218.dkr.ecr.us-east-1.amazonaws.com
+      - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${IMAGE_TAG:=latest}
+      - echo "IMAGE_TAG=$IMAGE_TAG" > /tmp/env.sh
   build:
     commands:
+      - source /tmp/env.sh
       - echo Build iniciado em `date`
       - echo Gerando imagem da BIA...
       - docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
+      - source /tmp/env.sh
       - echo Build finalizado com sucesso em `date`
       - echo Fazendo push da imagem para o ECR...
       - docker push $REPOSITORY_URI:latest
