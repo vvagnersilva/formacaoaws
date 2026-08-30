@@ -11,22 +11,29 @@ phases:
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 455958489218.dkr.ecr.us-east-1.amazonaws.com
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${IMAGE_TAG:=latest}
-      - echo "IMAGE_TAG=$IMAGE_TAG" > /tmp/env.sh
+      - echo "export IMAGE_TAG=$IMAGE_TAG" > /tmp/env.sh
+      - echo "IMAGE_TAG definida como $IMAGE_TAG"
   build:
     commands:
       - source /tmp/env.sh
-      - echo Build iniciado em `date`
+      - echo "Build iniciado em $(date)"
+      - echo "REPOSITORY_URI=$REPOSITORY_URI"
+      - echo "IMAGE_TAG=$IMAGE_TAG"
       - echo Gerando imagem da BIA...
       - docker build -t $REPOSITORY_URI:latest .
+      - echo "docker build finalizado com sucesso"
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+      - echo "docker tag finalizado com sucesso"
+      - docker images | grep $REPOSITORY_URI
   post_build:
     commands:
       - source /tmp/env.sh
-      - echo Build finalizado com sucesso em `date`
+      - echo "Build finalizado em $(date)"
       - echo Fazendo push da imagem para o ECR...
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Gerando artefato da imagem para o ECS
       - printf '[{"name":"bia","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
