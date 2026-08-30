@@ -10,9 +10,9 @@ phases:
     commands:
       - echo Fazendo login no ECR...
       - aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_REGISTRY
-      - REPOSITORY_URI=$ECR_REGISTRY/$ECR_REPO
-      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-      - IMAGE_TAG=${COMMIT_HASH:=latest}
+      - export REPOSITORY_URI=$ECR_REGISTRY/$ECR_REPO
+      - export COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - export IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
       - echo Build iniciado em `date`
