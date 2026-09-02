@@ -1,6 +1,6 @@
 {
   "$schema": "",
-  "name": "devops",
+  "name": "po",
   "description": "",
   "prompt": null,
   "welcomeMessage": null,
@@ -10,7 +10,12 @@
   "toolSchema": null,
   "mcpServers": {},
   "useLegacyMcpJson": false,
-  "resources": [],
+  "mcpSchema": null,
+  "resources": [
+    "file://AmazonQ.md",
+    "file://README.md",
+    "file://.kiro/rules/**/*.md"
+  ],
   "allowedTools": [],
   "model": null
 }

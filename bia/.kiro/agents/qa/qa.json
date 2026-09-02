@@ -1,6 +1,6 @@
 {
   "$schema": "",
-  "name": "po",
+  "name": "qa",
   "description": "",
   "prompt": null,
   "welcomeMessage": null,
@@ -10,8 +10,11 @@
   "toolSchema": null,
   "mcpServers": {},
   "useLegacyMcpJson": false,
-  "mcpSchema": null,
-  "resources": [],
+  "resources": [
+    "file://AmazonQ.md",
+    "file://README.md",
+    "file://.kiro/rules/**/*.md"
+  ],
   "allowedTools": [],
   "model": null
 }

@@ -10,7 +10,11 @@
   "toolSchema": null,
   "mcpServers": {},
   "useLegacyMcpJson": false,
-  "resources": [],
+  "resources": [
+    "file://AmazonQ.md",
+    "file://README.md",
+    "file://.kiro/rules/**/*.md"
+  ],
   "allowedTools": [],
   "model": null
 }
