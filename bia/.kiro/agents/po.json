@@ -1,0 +1,17 @@
+{
+  "$schema": "",
+  "name": "po",
+  "description": "",
+  "prompt": null,
+  "welcomeMessage": null,
+  "tools": [],
+  "toolAliases": {},
+  "toolsSettings": null,
+  "toolSchema": null,
+  "mcpServers": {},
+  "useLegacyMcpJson": false,
+  "mcpSchema": null,
+  "resources": [],
+  "allowedTools": [],
+  "model": null
+}

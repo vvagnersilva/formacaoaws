@@ -1,0 +1,16 @@
+{
+  "$schema": "",
+  "name": "qa",
+  "description": "",
+  "prompt": null,
+  "welcomeMessage": null,
+  "tools": [],
+  "toolAliases": {},
+  "toolsSettings": null,
+  "toolSchema": null,
+  "mcpServers": {},
+  "useLegacyMcpJson": false,
+  "resources": [],
+  "allowedTools": [],
+  "model": null
+}
