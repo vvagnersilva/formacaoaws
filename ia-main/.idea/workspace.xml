@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dab8bfa-8966-4b31-ab9e-d6c00ccf95a4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/wasilva/formacaoaws/ia-main" value="3IprASnmRcV3GmrXXP7rrDfhhwZ" />
+    </persistenceIdMap>
+  </component>
+  <component name="DBNavigator.Project.Workspace.Settings">
+    <assistant-settings>
+      <credential-settings>
+        <credentials />
+      </credential-settings>
+      <profile-settings>
+        <profiles />
+      </profile-settings>
+      <mcp-server-settings>
+        <workspace-integration value="false" />
+        <mcp-servers />
+        <mcp-tool-approvals />
+      </mcp-server-settings>
+    </assistant-settings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bia" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.291183396617114" />
+      <entry key="MS500" value="1.7813278801723174" />
+      <entry key="S2" value="1.940174202509126" />
+      <entry key="S5" value="1.9756259249753851" />
+      <entry key="S10" value="1.9877377814862531" />
+      <entry key="S30" value="1.9958957721876245" />
+      <entry key="S60" value="1.9979457761760528" />
+      <entry key="M2" value="1.9989723600661096" />
+      <entry key="M5" value="1.9995890308328264" />
+      <entry key="M10" value="2.001255896970256" />
+      <entry key="M15" value="2.027608963677335" />
+      <entry key="M30" value="2.5266765699034535" />
+      <entry key="H1" value="4.295131498391922" />
+      <entry key="H2" value="6.907383140944665" />
+      <entry key="H4" value="13.698819247278966" />
+      <entry key="D1" value="120.00023029131896" />
+      <entry key="W1" value="198.31298950256843" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="3.729891700121745E-194" />
+      <entry key="M5" value="4.2528345627587854E-78" />
+      <entry key="M10" value="2.0622401806673246E-39" />
+      <entry key="M15" value="1.6201659336660015E-26" />
+      <entry key="M30" value="1.2728573893669332E-13" />
+      <entry key="H1" value="3.567712697747578E-7" />
+      <entry key="H2" value="5.973033314612921E-4" />
+      <entry key="H4" value="0.024439789922609628" />
+      <entry key="D1" value="0.538703228207159" />
+      <entry key="W1" value="0.9154220481469407" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1800779318378782" />
+      <entry key="MS500" value="1.7448288710963085" />
+      <entry key="S2" value="1.9298748930483673" />
+      <entry key="S5" value="1.9714009003230026" />
+      <entry key="S10" value="1.9856072635558613" />
+      <entry key="S30" value="1.9951815552641496" />
+      <entry key="S60" value="1.997588159468137" />
+      <entry key="M2" value="1.998793424446457" />
+      <entry key="M5" value="1.999517426005406" />
+      <entry key="M10" value="2.0012200565341067" />
+      <entry key="M15" value="2.0275846741257433" />
+      <entry key="M30" value="2.5266606773063884" />
+      <entry key="H1" value="4.295117268906313" />
+      <entry key="H2" value="6.907968199143083" />
+      <entry key="H4" value="13.72324548191648" />
+      <entry key="D1" value="120.53891028504826" />
+      <entry key="W1" value="199.2284059955898" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3Ip4FsN3P0AuLUBSNkX3orSY3gB" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wasilva/formacaoaws/ia-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bia/.kiro/tasks" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dab8bfa-8966-4b31-ab9e-d6c00ccf95a4" name="Changes" comment="" />
+      <created>1788448076499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788448076499</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
